@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login Form</title>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/authentication.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header><span>JQuery Form Validation</span></header>
+<div id="colors" onMouseOver="changeTheme()">
+<span></span><span></span><span></span><span></span>
+</div>
+<div id="content">
+<div id="formContent">
+<form onsubmit="return formvalidation()" action="success.html">
+<table id="formValidation">
+
+	<tr>
+    	<td><label>UserName</label></td>
+        <td><label>:</label></td>
+        <td colspan="2"><input id="username" class="editableFields" type="text" autocomplete="off" /></td>
+        <td><span id="imageUname" class="dynamicImageField"></span></td>
+         <td><span id="unameMsg" class="message"></span></td>
+    </tr>
+	<tr>
+    	<td><label>Password</label></td>
+        <td><label>:</label></td>
+        <td colspan="2"><input id="password" class="editableFields" type="password" /></td>
+        <td><span id="imagePassword" class="dynamicImageField"></span></td>
+         <td><span id="pwdMsg" class="message"></span></td>
+    </tr>
+    <tr>
+    	<td></td>
+        <td></td>
+        <td></td>
+        <td><input type="submit" value="Login" /></td>
+    </tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>
